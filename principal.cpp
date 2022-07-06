@@ -33,7 +33,7 @@ void Principal::dibujar()
     // Crear un pincel para los bordes
     QPen pincel;
     pincel.setWidth(5);
-    pincel.setColor(Qt::red);
+    pincel.setColor(Qt::green);
     pincel.setJoinStyle(Qt::MiterJoin);
 
     // Establecer el pincel al "pintor"
@@ -59,9 +59,9 @@ void Principal::dibujar()
     painter.drawRect(x+50, y+50+incYN1,100,+altoN1);
 
     // Crear un objeto color para el relleno
-    QColor colorRelleno(190,120,162);
+    QColor colorRelleno(150,100,100);
     // Crear otro objeto color para el borde
-    QColor colorBorde(78,3,48);
+    QColor colorBorde(80,5,80);
 
     // Cambiar el color del pincel
     pincel.setColor(colorBorde);
@@ -76,8 +76,8 @@ void Principal::dibujar()
     painter.drawRect(x+190, y+50+incYN2, 100, altoN2);
 
     // Creando los colores de la tercera barra
-    QColor cRellenoBarra3(253, 253, 115);
-    QColor cBordeBarra3(174, 174, 51);
+    QColor cRellenoBarra3(253, 253, 50);
+    QColor cBordeBarra3(174, 174, 50);
 
     // Estableciendo colores al puncel y al painter
     pincel.setColor(cBordeBarra3);
