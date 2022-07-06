@@ -16,7 +16,7 @@ Principal::Principal(QWidget *parent)
     ui->outCuadro->setPixmap(lienzo);
 
 }
-
+//Hola
 Principal::~Principal()
 {
     delete ui;
