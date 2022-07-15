@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>682</width>
+    <width>732</width>
     <height>591</height>
    </rect>
   </property>
@@ -46,10 +46,10 @@ background-color: rgb(114, 159, 207);</string>
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>540</x>
       <y>10</y>
-      <width>151</width>
-      <height>183</height>
+      <width>171</width>
+      <height>251</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -58,8 +58,17 @@ background-color: rgb(114, 159, 207);</string>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QGroupBox" name="groupBox">
+       <property name="font">
+        <font>
+         <family>Sweet Talk</family>
+         <pointsize>20</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;Chilanka&quot;;</string>
+        <string notr="true">font: 75 12pt &quot;Chilanka&quot;;
+font: 20pt &quot;Sweet Talk&quot;;</string>
        </property>
        <property name="title">
         <string>Notas</string>
@@ -67,6 +76,9 @@ background-color: rgb(114, 159, 207);</string>
        <layout class="QFormLayout" name="formLayout">
         <item row="0" column="0">
          <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font: 18pt &quot;Sweet Talk&quot;;</string>
+          </property>
           <property name="text">
            <string>Nota 1</string>
           </property>
@@ -80,6 +92,9 @@ background-color: rgb(114, 159, 207);</string>
           <property name="styleSheet">
            <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
           <property name="maximum">
            <number>100</number>
           </property>
@@ -87,6 +102,9 @@ background-color: rgb(114, 159, 207);</string>
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">font: 18pt &quot;Sweet Talk&quot;;</string>
+          </property>
           <property name="text">
            <string>Nota 2</string>
           </property>
@@ -97,6 +115,9 @@ background-color: rgb(114, 159, 207);</string>
           <property name="styleSheet">
            <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
           <property name="maximum">
            <number>100</number>
           </property>
@@ -104,6 +125,17 @@ background-color: rgb(114, 159, 207);</string>
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <family>Sweet Talk</family>
+            <pointsize>18</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 18pt &quot;Sweet Talk&quot;;</string>
+          </property>
           <property name="text">
            <string>Nota 3</string>
           </property>
@@ -114,19 +146,46 @@ background-color: rgb(114, 159, 207);</string>
           <property name="styleSheet">
            <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
           <property name="maximum">
            <number>100</number>
           </property>
          </widget>
         </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <family>Sweet Talk</family>
+            <pointsize>20</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 20pt &quot;Sweet Talk&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Promedio</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLineEdit" name="inPromedio">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
        </layout>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="bntPromediar">
-       <property name="text">
-        <string>Promediar</string>
-       </property>
       </widget>
      </item>
     </layout>
@@ -137,11 +196,17 @@ background-color: rgb(114, 159, 207);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>682</width>
+     <width>732</width>
      <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
+    <property name="font">
+     <font>
+      <family>Sweet Talk</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
     <property name="title">
      <string>Archivo</string>
     </property>
@@ -173,9 +238,9 @@ background-color: rgb(114, 159, 207);</string>
    </property>
    <property name="font">
     <font>
-     <family>Chilanka</family>
-     <weight>75</weight>
-     <bold>true</bold>
+     <family>Sweet Talk</family>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="shortcut">
@@ -188,9 +253,9 @@ background-color: rgb(114, 159, 207);</string>
    </property>
    <property name="font">
     <font>
-     <family>Chilanka</family>
-     <weight>75</weight>
-     <bold>true</bold>
+     <family>Sweet Talk</family>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="shortcut">
