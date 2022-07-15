@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Principal</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="Resources.qrc">
+    <normaloff>:/img/barras.png</normaloff>:/img/barras.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(52, 101, 164);
 background-color: rgb(114, 159, 207);</string>
@@ -248,6 +252,10 @@ font: 20pt &quot;Sweet Talk&quot;;</string>
    </property>
   </action>
   <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/boton.png</normaloff>:/img/boton.png</iconset>
+   </property>
    <property name="text">
     <string>Salir</string>
    </property>
