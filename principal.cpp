@@ -40,8 +40,8 @@ void Principal::dibujar()
     pincel.setJoinStyle(Qt::MiterJoin);
 
     // Crear un objeto color para el borde y relleno
-    QColor colorBorde1(12, 14, 87);
-    QColor colorRelleno1(30, 32, 114);
+    QColor colorBorde1(12, 230, 150);
+    QColor colorRelleno1(30, 230, 150);
 
     // Establecer el pincel al "pintor"
     painter.setPen(pincel);
@@ -59,8 +59,8 @@ void Principal::dibujar()
 
     //Barra 2
     // Crear un objeto color para el borde y relleno
-    QColor colorRelleno2(150,100,100);
-    QColor colorBorde2(80,5,80);
+    QColor colorRelleno2(150,107,100);
+    QColor colorBorde2(80,107,100);
 
     // Cambiar el color del pincel
     pincel.setColor(colorBorde2);
@@ -82,8 +82,8 @@ void Principal::dibujar()
 
     // Barra 3
     // Crear un objeto color para el borde y relleno
-    QColor cRellenoBarra3(253, 253, 50);
-    QColor cBordeBarra3(174, 174, 50);
+    QColor cRellenoBarra3(253, 17, 155);
+    QColor cBordeBarra3(174, 17, 155);
 
     // Estableciendo colores al puncel y al painter
     pincel.setColor(cBordeBarra3);
@@ -97,7 +97,7 @@ void Principal::dibujar()
 
     // Dibujar tercera barra
     painter.drawRect(x+330,y+50+incYN3,100,altoN3);
-    painter.drawText(x+335,y+480,"Nota 3");
+    painter.drawText(x+370,y+480,"Nota 3");
 
     // Promedio
     // Poner el color y el estilo
@@ -110,9 +110,80 @@ void Principal::dibujar()
     int alto4 = this->getAlto(promedio);
     int incYN4 = this->incY(alto4);
 
-    // Dibujar la rasha
+    // Dibujar la raya del promedio
     painter.drawLine(x+30,y+50+incYN4,450,y+50+incYN4);
     ui->inPromedio->setText(QString::number(promedio));
+
+    //Plano Cartesiano
+    // EJE Y
+    pincel.setColor(Qt::black);
+    painter.setPen(pincel);
+    painter.drawLine(x+35,y+20,x+35,y+470);
+
+    // Valores del eje y
+    painter.drawLine(x+30,y+410,x+40,y+410);
+    painter.drawText(x+3,y+415,"10");
+    painter.drawLine(x+30,y+430,x+40,y+430);
+    painter.drawText(x+3,y+435,"5");
+
+    painter.drawLine(x+30,y+370,x+40,y+370);
+    painter.drawText(x+3,y+375,"20");
+    painter.drawLine(x+30,y+390,x+40,y+390);
+    painter.drawText(x+3,y+395,"15");
+
+
+    painter.drawLine(x+30,y+330,x+40,y+330);
+    painter.drawText(x+3,y+335,"30");
+    painter.drawLine(x+30,y+350,x+40,y+350);
+    painter.drawText(x+3,y+355,"25");
+
+
+    painter.drawLine(x+30,y+290,x+40,y+290);
+    painter.drawText(x+3,y+295,"40");
+    painter.drawLine(x+30,y+310,x+40,y+310);
+    painter.drawText(x+3,y+315,"35");
+
+
+    painter.drawLine(x+30,y+250,x+40,y+250);
+    painter.drawText(x+3,y+255,"50");
+    painter.drawLine(x+30,y+270,x+40,y+270);
+    painter.drawText(x+3,y+275,"45");
+
+
+    painter.drawLine(x+30,y+210,x+40,y+210);
+    painter.drawText(x+3,y+215,"60");
+    painter.drawLine(x+30,y+230,x+40,y+230);
+    painter.drawText(x+3,y+235,"55");
+
+
+    painter.drawLine(x+30,y+170,x+40,y+170);
+    painter.drawText(x+3,y+175,"70");
+    painter.drawLine(x+30,y+190,x+40,y+190);
+    painter.drawText(x+3,y+195,"65");
+
+
+    painter.drawLine(x+30,y+130,x+40,y+130);
+    painter.drawText(x+3,y+135,"80");
+    painter.drawLine(x+30,y+150,x+40,y+150);
+    painter.drawText(x+3,y+155,"75");
+
+
+    painter.drawLine(x+30,y+90,x+40,y+90);
+    painter.drawText(x+3,y+95,"90");
+    painter.drawLine(x+30,y+110,x+40,y+110);
+    painter.drawText(x+3,y+115,"85");
+
+
+    painter.drawLine(x+30,y+50,x+40,y+50);
+    painter.drawText(x,y+55,"100");
+    painter.drawLine(x+30,y+70,x+40,y+70);
+    painter.drawText(x+3,y+75,"95");
+
+
+    // Eje X
+    pincel.setColor(Qt::black);
+    painter.setPen(pincel);
+    painter.drawLine(x+10,y+450,x+450,y+450);
 
 }
 
